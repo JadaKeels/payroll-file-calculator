@@ -31,9 +31,17 @@ try {
         String hoursWorked = tokens[2];
         String payRate = tokens[3];
 
-        Employee employee = new Employee(id,name, hoursWorked,payRate);
+        Employee employee = new Employee(id, name, hoursWorked, payRate);
 
-
+        System.out.printf("%d, %s: %,d %,d n",
+                employee.getId(), employee.getName(), employee.getHoursworked(), employee.getPayrate
     }
+        bufferedReader.close();
+}catch (Exception ex) {
+    System.out.println("Something went wrong!");
+}
+        System.out.println();
+    }
+}
 
 
